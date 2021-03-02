@@ -20,6 +20,9 @@
     "type": "git",
     "url": "https://github.com/ximing/uploader-x"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "keywords": [],
   "author": "geeknull",
   "license": "ISC",
