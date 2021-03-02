@@ -1,6 +1,6 @@
 {
   "name": "uploader-x",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "uploader-x is powerfull",
   "main": "dist/cjs.es6.js",
   "module": "dist/es.es6.js",

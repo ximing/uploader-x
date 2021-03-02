@@ -5,9 +5,9 @@ import EventDelegate from './eventDelegate';
 import { Transport } from './transport';
 import { XFile } from './file';
 import FileGetter from './fileGetter';
-import createLog from './log.js';
+import createLog from './log';
 // @ts-ignore
-import MD5Worker from 'web-worker:./md5.worker';
+import MD5Worker from 'web-worker:./md5';
 
 export let CONSTANTS = {
   MD5_HAS: 'MD5_HAS',
