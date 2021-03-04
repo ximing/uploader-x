@@ -75,7 +75,7 @@ file 对象封装在事件回调函数中返回的参数对象里为`file`的`ke
 
 - `eventEmitter`：事件发射器
 - `ext`：文件后缀
-- `id`：文件唯一标识符，eg：`WU_FILE_0`
+- `id`：文件唯一标识符，eg：`X_FILE_0`
 - `isFile`：是否是文件(有可能是目录呢)
 - `lastModifiedDate`：最后修改时间
 - `loaded`：上传字节数

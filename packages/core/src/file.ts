@@ -15,7 +15,7 @@
 import * as Util from './util';
 import EventEmitter from './eventBus';
 
-let idPrefix = 'WU_FILE_';
+let idPrefix = 'X_FILE_';
 let idSuffix = 0;
 let rExt = /\.([^.]+)$/;
 let statusMap: any = {};

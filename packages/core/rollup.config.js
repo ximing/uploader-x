@@ -4,13 +4,17 @@ const resolvePlugin = require('@rollup/plugin-node-resolve');
 const typescript = require('rollup-plugin-typescript2');
 const externalsPlugin = require('rollup-plugin-auto-external');
 
+const workerConf = {
+  targetPlatform: 'browser',
+  inline: false,
+};
 // this is also used in watch mode by the startExample script
 const defaultBuild = [
   {
     input: path.resolve('src/index.ts'),
     external: [],
     plugins: [
-      webWorkerLoader(),
+      webWorkerLoader(workerConf),
       resolvePlugin(),
       typescript({
         tsconfig: 'tsconfig.build.json',
@@ -33,7 +37,7 @@ const allBuilds = [
     input: path.resolve('src/index.ts'),
     external: [],
     plugins: [
-      webWorkerLoader(),
+      webWorkerLoader(workerConf),
       resolvePlugin(),
       typescript({
         tsconfig: 'tsconfig.build.json',
@@ -52,7 +56,7 @@ const allBuilds = [
     input: path.resolve('src/index.ts'),
     external: [],
     plugins: [
-      webWorkerLoader(),
+      webWorkerLoader(workerConf),
       resolvePlugin(),
       typescript({
         tsconfig: 'tsconfig.build.json',
@@ -71,7 +75,7 @@ const allBuilds = [
     input: path.resolve('src/index.ts'),
     external: [],
     plugins: [
-      webWorkerLoader(),
+      webWorkerLoader(workerConf),
       resolvePlugin(),
       typescript({
         tsconfig: 'tsconfig.build.json',

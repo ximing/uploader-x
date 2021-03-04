@@ -42,7 +42,7 @@ let _config = {
     console.log(...args);
   },
   logLevel: 1,
-  fileIdPrefix: 'WU_FILE_',
+  fileIdPrefix: 'X_FILE_',
   md5Calc: true,
   md5LimitSize: 1024 * 1024 * 1,
 };
@@ -119,7 +119,7 @@ export class Uploader {
         },
       });
       if (res.indexOf(false) === -1) {
-        xFile.statusText = xFile.Status.QUEUED;
+        xFile.statusText = XFile.Status.QUEUED;
         await this.eventEmitter.emit('fileQueued', { file: xFile });
         if (this.config.auto) {
           this.sliceFile(xFile);
